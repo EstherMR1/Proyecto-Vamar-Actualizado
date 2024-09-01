@@ -1,0 +1,842 @@
+/* Apartir de aqui inicia la sección de (Bienvenido.html) */
+
+
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.home-body{
+     position: fixed;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+}
+
+nav .nav-logo-container{
+    margin-left: 1200px;
+}
+
+nav .nav-logo-container img{
+    width: 220px;
+    margin-top: 10px;
+}
+
+nav .nav-reportar-container{
+    margin-left: -170px;
+}
+
+nav .nav-reportar-container img{
+    width: 120px;
+    margin-top: 600px;
+}
+
+.home-main{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 100%;
+}
+
+.home-main section{
+    display: grid;
+    grid-column: 2;
+    justify-items: center;
+    height: 350px;
+    margin-top: 80px;
+}
+
+.home-main-titulo{
+    width: 500px;
+    margin-top: -100px;
+}
+
+.home-main-text{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: rgb(17, 15, 15);
+    text-align: center;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid silver;
+    left: 55px;
+    top: 230px;
+    margin: 0px;
+}
+
+form .Tipo-de-identificacion{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.Tipo-de-identificacion input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.Tipo-de-identificacion label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: none;
+}
+
+.Tipo-de-identificacion span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: rgba(21, 172, 172, 0.955);
+    transition: .5s;
+}
+
+.Tipo-de-identificacion input:focus ~ label,
+.Tipo-de-identificacion input:focus ~ label{
+    top: -5px;
+    color:rgba(21, 172, 172, 0.955);
+}
+
+.Tipo-de-identificacion input:focus ~ span::before,
+.Tipo-de-identificacion input:focus ~ span::before{
+    width: 100%;
+}
+
+form .Número-de-identificación{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.Número-de-identificación input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.Número-de-identificación label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: rgba(160, 170, 170, 0.955);
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: none;
+}
+
+.Número-de-identificación span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: rgba(21, 172, 172, 0.955);
+    transition: .5s;
+}
+
+.Número-de-identificación input:focus ~ label,
+.Número-de-identificación input:focus ~ label{
+    top: -5px;
+    color: rgba(21, 172, 172, 0.955);
+}
+
+.Número-de-identificación input:focus ~ span::before,
+.Número-de-identificación input:focus ~ span::before{
+    width: 100%;
+}
+
+
+form .contraseña{
+    position: relative;
+    border-bottom: 2px solid rgba(160, 170, 170, 0.955);
+    margin: 30px 0;
+}
+
+.contraseña input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.contraseña label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.contraseña span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: rgba(21, 172, 172, 0.955);
+}
+
+.contraseña input:focus ~ label,
+.contraseña input:focus ~ label{
+    top: -5px;
+    color:rgba(21, 172, 172, 0.955);
+}
+
+.contraseña input:focus ~ span::before,
+.contraseña input:focus ~ span::before{
+    width: 100%;
+}
+
+.recordar{
+    margin: -5px 0 20px 5px;
+    color: rgba(21, 172, 172, 0.955);
+    cursor: pointer;
+    Font-weight: 700;
+}
+
+.recordar:hover{
+    text-decoration: underline;
+}
+
+.home-main-botonIngresar{
+    margin: 10px;
+    width: 130px;
+    height: 45px;
+    background-color: rgb(22, 183, 183);
+    display: grid;
+    align-items: center;
+    border-radius: 25px;
+    position: absolute;
+    left: 670px;
+    top: 585px;
+    margin: 10px;
+}
+
+.home-main-botonIngresar:hover{
+    border-color: rgb(22, 183, 183);
+}
+
+.home-main-botonIngresar a{
+    font-weight: 750;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;  
+}
+
+.registrarse{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+    Font-weight: 700;
+}
+
+.registrarse a{
+    color: rgba(21, 172, 172, 0.955);
+    text-decoration: none;
+}
+
+.registrarse a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+/* apartir de aqui inicia la seccion de (Selecciona.html) */
+
+.home-main-boton1{
+    margin: 10px;
+    width: 400px;
+    height: 40px;
+    background-color: rgb(22, 183, 183);
+    display: grid;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.home-main-boton1:hover{
+    border-color: #ffffff;
+}
+
+.home-main-boton1 a{
+    font-weight: 750;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.home-main-boton2{
+    margin: 10px;
+    width: 400px;
+    height: 40px;
+    background-color: rgb(22, 183, 183);
+    display: grid;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.home-main-boton2:hover{
+    border-color: #ffffff;
+}
+
+.home-main-boton2 a{
+    font-weight: 750;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.home-main-boton3{
+    margin: 10px;
+    width: 400px;
+    height: 40px;
+    background-color: rgb(22, 183, 183);
+    display: grid;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.home-main-boton3:hover{
+    border-color: #ffffff;
+}
+
+.home-main-boton3 a{
+    font-weight: 750;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.home-main-boton4{
+    margin: 10px;
+    width: 400px;
+    height: 40px;
+    background-color: rgb(22, 183, 183);
+    display: grid;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.home-main-boton4:hover{
+    border-color: #ffffff;
+}
+
+.home-main-boton4 a{
+    font-weight: 750;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.home-main-boton5{
+    margin: 10px;
+    width: 400px;
+    height: 40px;
+    background-color: rgb(22, 183, 183);
+    display: grid;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.home-main-boton5:hover{
+    border-color: #ffffff;
+}
+
+.home-main-boton5 a{
+    font-weight: 750;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.home-main-boton6{
+    margin: 10px;
+    width: 400px;
+    height: 40px;
+    background-color: rgb(22, 183, 183);
+    display: grid;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.home-main-boton6:hover{
+    border-color: #ffffff;
+}
+
+.home-main-boton6 a{
+    font-weight: 750;
+    font-size: 18px;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/* Apartir de aqui inicia la sección de (Registrar.html) */
+
+.home-main-text2{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: rgb(17, 15, 15);
+    text-align: center;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid silver;
+    position: absolute;
+    left: 600px;
+    top: 230px;
+    margin: 10px;
+}
+
+
+
+form .espacio1{
+    position: absolute;
+    margin: 5px;
+    left: 300px;
+    top: 300px;
+}
+
+.espacio1 input{
+    width: 70%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    background: none;
+    
+}
+
+.espacio1 label{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    
+}
+
+.espacio1 input:focus ~ label{
+    top: -20px;
+    color:rgba(21, 172, 172, 0.955);
+}
+
+
+form .espacio2{
+    position: absolute;
+    margin: 5px;
+    left: 550px;
+    top: 300px;
+}
+
+.espacio2 input{
+    width: 70%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    background: none;
+    
+}
+
+.espacio2 label{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    
+}
+
+.espacio2 input:focus ~ label{
+    top: -20px;
+    color:rgba(21, 172, 172, 0.955);
+}
+
+form .espacio3{
+    position: absolute;
+    margin: 5px;
+    left: 800px;
+    top: 300px;
+}
+
+.espacio3 input{
+    width: 70%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    background: none;
+    
+}
+
+.espacio3 label{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    
+}
+
+.espacio3 input:focus ~ label{
+    top: -20px;
+    color:rgba(21, 172, 172, 0.955);
+}
+
+form .espacio4{
+    position: absolute;
+    margin: 5px;
+    left: 1050px;
+    top: 300px;
+}
+
+.espacio4 input{
+    width: 70%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    background: none;
+    
+}
+
+.espacio4 label{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    
+}
+
+.espacio4 input:focus ~ label{
+    top: -20px;
+    color:rgba(21, 172, 172, 0.955);
+}
+
+
+form .espacio5{
+    position: absolute;
+    margin: 5px;
+    left: 300px;
+    top: 380px;
+}
+
+.espacio5 input{
+    width: 70%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    background: none;
+    
+}
+
+.espacio5 label{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    
+}
+
+.espacio5 input:focus ~ label{
+    top: -20px;
+    color:rgba(21, 172, 172, 0.955);
+}
+
+form .espacio6{
+    position: absolute;
+    margin: 5px;
+    left: 550px;
+    top: 380px;
+}
+
+.espacio6 input{
+    width: 70%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    background: none;
+    
+}
+
+.espacio6 label{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    
+}
+
+.espacio6 input:focus ~ label{
+    top: -20px;
+    color:rgba(21, 172, 172, 0.955);
+}
+
+form .espacio7{
+    position: absolute;
+    margin: 5px;
+    left: 800px;
+    top: 380px;
+}
+
+.espacio7 input{
+    width: 70%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    background: none;
+    
+}
+
+.espacio7 label{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    
+}
+
+.espacio7 input:focus ~ label{
+    top: -20px;
+    color:rgba(21, 172, 172, 0.955);
+}
+
+form .espacio8{
+    position: absolute;
+    margin: 5px;
+    left: 300px;
+    top: 460px;
+}
+
+.espacio8 input{
+    width: 70%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    background: none;
+    
+}
+
+.espacio8 label{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    
+}
+
+.espacio8 input:focus ~ label{
+    top: -20px;
+    color:rgba(21, 172, 172, 0.955);
+}
+
+form .espacio9{
+    position: absolute;
+    margin: 5px;
+    left: 550px;
+    top: 460px;
+}
+
+.espacio9 input{
+    width: 70%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    background: none;
+    
+}
+
+.espacio9 label{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    
+}
+
+.espacio9 input:focus ~ label{
+    top: -20px;
+    color:rgba(21, 172, 172, 0.955);
+}
+form .espacio10{
+    position: absolute;
+    margin: 5px;
+    left: 800px;
+    top: 460px;
+}
+
+.espacio10 input{
+    width: 70%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    background: none;
+    
+}
+
+.espacio10 label{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    
+}
+
+.espacio10 input:focus ~ label{
+    top: -20px;
+    color:rgba(21, 172, 172, 0.955);
+}
+form .espacio11{
+    position: absolute;
+    margin: 5px;
+    left: 1050px;
+    top: 460px;
+}
+
+.espacio11 input{
+    width: 70%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    background: none;
+    
+}
+
+.espacio11 label{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    
+}
+
+.espacio11 input:focus ~ label{
+    top: -20px;
+    color:rgba(21, 172, 172, 0.955);
+}
+
+.home-main-boton00{
+    margin: 10px;
+    width: 130px;
+    height: 45px;
+    background-color: rgb(22, 183, 183);
+    display: grid;
+    align-items: center;
+    border-radius: 25px;
+    position: absolute;
+    left: 550px;
+    top: 585px;
+    margin: 10px;
+}
+
+.home-main-boton00:hover{
+    border-color: #faf3f3;
+}
+
+.home-main-boton00 a{
+    font-weight: 750;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;  
+}
+
+.home-main-boton001{
+    margin: 10px;
+    width: 130px;
+    height: 45px;
+    background-color: rgb(22, 183, 183);
+    display: grid;
+    align-items: center;
+    border-radius: 25px;
+    position: absolute;
+    left: 825px;
+    top: 585px;
+    margin: 10px;
+}
+
+.home-main-boton001:hover{
+    border-color: #faf3f3;
+}
+
+.home-main-boton001 a{
+    font-weight: 750;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;  
+}
+
+
