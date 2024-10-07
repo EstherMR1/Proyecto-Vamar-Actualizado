@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/Icono VAMAR.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/media-queries.css">
+    <title>Ingreso - VAMAR</title>
+    <script>
+        function validarFormulario() {
+            var tipoIdentificacion = document.querySelector('#tipoIdentificacion').value;
+            var numeroIdentificacion = document.querySelector('#numeroIdentificacion').value;
+            var contraseña = document.querySelector('#contraseña').value;
+            
+            // Valores correctos predefinidos
+            var tipoIdentificacionCorrecto = "Cedula de ciudadanía"; 
+            var numeroIdentificacionCorrecto = "123456789";
+            var contraseñaCorrecta = "123.123";
+            
+            // Validación de campos vacíos
+            if (tipoIdentificacion === "" || numeroIdentificacion === "" || contraseña === "") {
+                document.getElementById('mensajeError').innerHTML = 'Por favor, complete todos los campos';
+                alert("Por favor, complete todos los campos");
+                return false;
+    
+            } else if (tipoIdentificacion === tipoIdentificacionCorrecto && 
+                       numeroIdentificacion === numeroIdentificacionCorrecto && 
+                       contraseña === contraseñaCorrecta) {
+                // Si los datos son correctos, redirigir al portal
+                window.open ("./Portal.html");
+                return true;
+            } else {
+                // Si los datos son incorrectos, mostrar alerta y mensaje de error
+                alert("Datos incorrectos");
+                document.getElementById('mensajeError').innerHTML = 'Credenciales incorrectas. Intente nuevamente.';
+                return false;
+            }
+        }
+    </script>
+</head>
+<body class="Home-body">
+    <header>
+        <nav>
+            <section class="nav-logo-container">
+                <a href="#"><img src="assets/img/Logo VAMAR.png" alt="Logotipo Consultorio Odontológico VAMAR"></a>
+            </section>
+        </nav>
+    </header>
+    <main class="home-main">
+        <section>
+            <p class="home-main-titulo">
+                <a href="#"><img src="./assets/img/Titulo VAMAR.png"></a>
+            </p>
+            <p class="home-main-text"> ¡BIENVENIDO AL SISTEMA DE INGRESO! </p>
+            <form onsubmit="return validarFormulario()">
+                <div class="Tipo-de-identificacion">
+                    <select id="tipoIdentificacion" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="Cedula de ciudadanía">Cedula de ciudadanía</option>
+                        <option value="Cedula de extranjería">Cedula de extranjería</option>
+                        <option value="Pasaporte">Pasaporte</option>
+                    </select>
+                    <label>Tipo de identificación</label>
+                </div>
+                <div class="Número-de-identificación">
+                    <input type="text" id="numeroIdentificacion" required>
+                    <label>Número de identificación</label>
+                </div>
+                <div class="contraseña">
+                    <input type="password" id="contraseña" required>
+                    <label>Contraseña</label>
+                </div>
+                <button class="home-main-botonIngresar" type="submit">INGRESAR</button>
+                <div id="mensajeError"></div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/Icono VAMAR.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media-queries.css">
+    <title>Programar Cita - VAMAR</title>
+</head>
+<body class="Home-body">
+    <header>
+        <nav>
+            <section class="nav-logo-container">
+                <a href="#"><img src="./assets/img/Logo VAMAR.png" alt="Logotipo Consultorio Odontológico VAMAR"></a>
+            </section>
+        </nav>
+    </header>
+    <main class="home-main">
+        <section>
+            <p class="home-main-titulo">
+                <a href="#"><img src="./assets/img/Titulo VAMAR.png"></a>
+            </p>
+            <p class="home-main-texth">
+                PROGRAMAR CITA
+            </p>
+            <form method="post">
+                <div class="espacioh1">
+                    <input type="text" required>
+                    <label>Nombre completo</label>
+                </div>
+                <div class="espacioh2">
+                    <input type="text" required>
+                    <label>Apellido completo</label>
+                </div>
+                <div class="espacioh3">
+                    <select required>
+                        <option value="" disabled selected>Tipo de identidad</option>
+                        <option value="cedula-ciudadania">Cédula de ciudadanía</option>
+                        <option value="cedula-extranjeria">Cédula de extranjería</option>
+                        <option value="pasaporte">Pasaporte</option>
+                    </select>
+                </div>
+                <div class="espacioh4">
+                    <input type="number" required>
+                    <label>Número de identidad</label>
+                </div>
+                <div class="espacioh5">
+                    <input type="tel" required>
+                    <label>Teléfono</label>
+                </div>
+                <div class="espacioh6">
+                    <input type="date" required>
+                    <label>Fecha</label>
+                </div>
+                <div class="espacioh7">
+                    <input type="time" required>
+                    <label>Hora</label>
+                </div>
+                <div class="espacioh8">
+                    <select required>
+                        <option value="" disabled selected>Tipo de cita</option>
+                        <option value="consulta">Consulta</option>
+                        <option value="limpieza">Limpieza</option>
+                        <option value="tratamiento">Tratamiento</option>
+                    </select>
+                </div>
+                <div class="espacioh9">
+                    <select required>
+                        <option value="" disabled selected>Personal médico</option>
+                        <option value="doctor">Doctor</option>
+                        <option value="doctora">Doctora</option>
+                        <option value="enfermero">Enfermero</option>
+                        <option value="enfermera">Enfermera</option>
+                    </select>
+                </div>
+                <button class="home-main-botonh1">
+                    <a href="#">PROGRAMAR</a>
+                </button>
+                <button class="home-main-botonh2">
+                    <a href="#">CANCELAR</a>
+                </button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

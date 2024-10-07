@@ -1,0 +1,915 @@
+/* Apartir de aqui inicia la sección de (Bienvenido.html) */
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Lora", serif;
+}
+
+.home-body{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+header {
+    background-color: rgb(26, 163, 163);
+    height: 70px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 90px;
+}
+
+nav .nav-logo-container{
+  margin-left: 1200px;
+}
+
+nav .nav-logo-container img{
+  width: 220px;
+  margin-top: 100px;
+}
+
+.home-main{
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  height: 100%;
+}
+
+.home-main section{
+  display: grid;
+  grid-column: 2;
+  justify-items: center;
+  height: 350px;
+  margin-top: 80px;
+}
+
+.home-main-titulo{
+    position: relative;
+    width: 500px;
+    margin-top: -50px;
+}
+
+.home-main-text{
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: rgb(17, 15, 15);
+  text-align: center;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid silver;
+}
+
+form {
+  margin-top: 40px;
+}
+
+.Tipo-de-identificacion {
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+
+.Tipo-de-identificacion select {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+  font-family: "Lora", serif;
+}
+
+.Tipo-de-identificacion label {
+  position: absolute;
+  top: -10px;
+  left: 5px;
+  color: #adadad;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+.Número-de-identificación {
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+
+.Número-de-identificación input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+  font-family: "Lora", serif;
+}
+
+.Número-de-identificación label {
+  position: absolute;
+  top: -10px;
+  left: 5px;
+  color: rgba(160, 170, 170, 0.955);
+  font-size: 16px;
+  pointer-events: none;
+}
+
+.contraseña {
+  position: relative;
+  border-bottom: 2px solid rgba(160, 170, 170, 0.955);
+  margin: 30px 0;
+}
+
+.contraseña input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+  font-family: "Lora", serif;
+}
+
+.contraseña label {
+  position: absolute;
+  top: -10px;
+  left: 5px;
+  color: #adadad;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+
+
+
+
+.home-main-botonIngresar {
+        margin: 10px auto;
+        width: 130px;
+        height: 45px;
+        background-color: rgb(26, 163, 163);
+        display: grid;
+        align-items: center;
+        border-radius: 25px;
+        box-shadow: 0 0 10px rgba(34, 30, 30, 0.2);
+        border: none;
+        cursor: pointer;
+        text-align: center;
+      }
+      
+  
+  .home-main-botonIngresar:hover {
+    background-color: rgb(18, 163, 163);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  }
+  
+  .home-main-botonIngresar a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+  }
+  
+
+/* apartir de aqui inicia la seccion de (Portal.html) */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Lora", serif;
+}
+
+.home-main-boton1{
+    margin: 10px;
+    width: 400px;
+    height: 40px;
+    background-color: rgb(26, 163, 163);
+    display: grid;
+    align-items: center;
+    border-radius: 25px;
+    border: none; 
+    box-shadow: none; 
+    transition: box-shadow 0.3s ease;
+}
+.home-main-boton1:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+}
+
+
+.home-main-boton1 a{
+    font-weight: 750;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.home-main-boton2{
+    margin: 10px;
+    width: 400px;
+    height: 40px;
+    background-color: rgb(26, 163, 163);
+    display: grid;
+    align-items: center;
+    border-radius: 25px;
+    border: none; 
+    box-shadow: none; 
+    transition: box-shadow 0.3s ease;
+}
+.home-main-boton2:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.home-main-boton2 a{
+    font-weight: 750;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+
+.home-main-boton3{
+    margin: 10px;
+    width: 400px;
+    height: 40px;
+    background-color: rgb(26, 163, 163);
+    display: grid;
+    align-items: center;
+    border-radius: 25px;
+    border: none; 
+    box-shadow: none; 
+    transition: box-shadow 0.3s ease;
+}
+.home-main-boton3:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.home-main-boton3 a{
+    font-weight: 750;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.home-main-boton4{
+    margin: 10px;
+    width: 400px;
+    height: 40px;
+    background-color: rgb(26, 163, 163);
+    display: grid;
+    align-items: center;
+    border-radius: 25px;
+    border: none; 
+    box-shadow: none; 
+    transition: box-shadow 0.3s ease;
+}
+.home-main-boton4:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+}
+
+
+.home-main-boton4 a{
+    font-weight: 750;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.home-main-boton1, .home-main-boton2, .home-main-boton3, .home-main-boton4{
+transform: translateY(30px);
+}
+
+
+
+
+/* Apartir de aqui inicia la sección de (Registrar_Paciente.html) */
+
+
+
+.home-main-text2{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: rgb(17, 15, 15);
+    text-align: center;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid silver;
+    position: relative;
+  }
+
+  .espacio1, .espacio2, .espacio3, .espacio4, .espacio5, .espacio6, 
+.espacio7, .espacio8, .espacio9, .espacio10, .espacio11 {
+    transform: translateY(-50px); width: 165px !important;
+}
+
+.espacio1 {
+    position: relative;
+    margin: 40px 0;
+    margin-left: -255px;
+}
+
+
+.espacio1 input {
+    width: 165px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    background: none;
+}
+
+.espacio1 label {
+    position: absolute; 
+    top: -5px;
+    left: 10px;
+    font-size: 18px;
+    color: #adadad;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+.espacio2 {
+    position: relative;
+    margin: -102px 0;
+    margin-left: -0px;
+}
+
+
+.espacio2 input {
+    width: 165px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    background: none;
+}
+
+.espacio2 label {
+    position: absolute; 
+    top: -5px;
+    left: 10px;
+    font-size: 18px;
+    color: #adadad;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+.espacio3 {
+    position: absolute;
+    margin: 41px 0;
+    margin-left: 260px;
+}
+
+
+.espacio3 input {
+    width: 165px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    background: none;
+}
+
+.espacio3 label {
+    position: absolute; 
+    top: -5px;
+    left: 10px;
+    font-size: 18px;
+    color: #adadad;
+    transition: 0.3s ease-in-out;
+}
+
+
+.espacio4 {
+    position: absolute;
+    margin: 41px 0;
+    margin-left: 510px;
+}
+
+
+.espacio4 input {
+    width: 165px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    background: none;
+}
+
+.espacio4 label {
+    position: absolute; 
+    top: -5px;
+    left: 10px;
+    font-size: 18px;
+    color: #adadad;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+.espacio5 {
+    position: relative;
+    margin: 125px 0;
+    margin-left: -255px;
+}
+
+
+.espacio5 input {
+    width: 165px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    background: none;
+}
+
+.espacio5 label {
+    position: absolute; 
+    top: -5px;
+    left: 10px;
+    font-size: 18px;
+    color: #adadad;
+    transition: 0.3s ease-in-out;
+}
+
+
+.espacio6 {
+    position: relative;
+    margin: -186px 0;
+    margin-left: -0px;
+}
+
+
+.espacio6 input {
+    width: 165px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    background: none;
+}
+
+.espacio6 label {
+    position: absolute; 
+    top: -5px;
+    left: 10px;
+    font-size: 18px;
+    color: #adadad;
+    transition: 0.3s ease-in-out;
+}
+
+
+.espacio7 {
+    position: relative;
+    margin: 125px 0;
+    margin-left: 260px;
+}
+
+
+.espacio7 input {
+    width: 165px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    background: none;
+}
+
+.espacio7 label {
+    position: absolute; 
+    top: -5px;
+    left: 10px;
+    font-size: 18px;
+    color: #adadad;
+    transition: 0.3s ease-in-out;
+}
+
+.espacio8 {
+    position: absolute;
+    margin: -105px 0;
+    margin-left: -255px;
+}
+
+
+.espacio8 input {
+    width: 165px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    background: none;
+}
+
+.espacio8 label {
+    position: absolute; 
+    top: -5px;
+    left: 10px;
+    font-size: 18px;
+    color: #adadad;
+    transition: 0.3s ease-in-out;
+}
+
+
+.espacio9 {
+    position: absolute;
+    margin: -105px 0;
+    margin-left: -0px;
+}
+
+
+.espacio9 input {
+    width: 165px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    background: none;
+}
+
+.espacio9 label {
+    position: absolute; 
+    top: -5px;
+    left: 10px;
+    font-size: 18px;
+    color: #adadad;
+    transition: 0.3s ease-in-out;
+}
+
+.espacio10 {
+    position: absolute;
+    margin: -105px 0;
+    margin-left: 260px;
+}
+
+
+.espacio10 input {
+    width: 165px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    background: none;
+}
+
+.espacio10 label {
+    position: absolute; 
+    top: -5px;
+    left: 10px;
+    font-size: 18px;
+    color: #adadad;
+    transition: 0.3s ease-in-out;
+}
+
+
+.espacio11 {
+    position: absolute;
+    margin: -105px 0;
+    margin-left: 510px;
+}
+
+
+.espacio11 input {
+    width: 165px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    background: none;
+}
+
+.espacio11 label {
+    position: absolute; 
+    top: -5px;
+    left: 10px;
+    font-size: 18px;
+    color: #adadad;
+    transition: 0.3s ease-in-out;
+}
+
+.home-main-boton00{
+    margin: 10px;
+    width: 130px;
+    height: 45px;
+    background-color: rgb(26, 163, 163);
+    display: grid;
+    align-items: center;
+    border-radius: 25px;
+    position: absolute;
+    left: 550px;
+    top: 585px;
+    margin: 10px;
+}
+
+.home-main-boton00:hover{
+    border-color: #faf3f3;
+}
+
+.home-main-boton00 a{
+    font-weight: 750;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;  
+}
+
+.home-main-boton001{
+    margin: 10px;
+    width: 130px;
+    height: 45px;
+    background-color: rgb(26, 163, 163);
+    display: grid;
+    align-items: center;
+    border-radius: 25px;
+    position: absolute;
+    left: 825px;
+    top: 585px;
+    margin: 10px;
+}
+
+.home-main-boton001:hover{
+    border-color: #faf3f3;
+}
+
+.home-main-boton001 a{
+    font-weight: 750;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;  
+}
+
+.home-main-boton00, .home-main-boton001{
+transform: translateY(40px);
+}
+
+
+
+/* Apartir de aqui inicia la sección de (Programar_Cita.html) 
+Las que son necesarias, recordando que hemos tomado la estructura de los modulos anteriores*/
+
+
+
+
+/* De aqui en adelante no fue necesario agregar los CSS de algunos modulos porque tomamos la estructuras 
+anteriores  (((Gestion_Pacientes, Gestion_Citas, Informes_Estadistincas, Buscar_Paciente, Editar_Paciente, 
+Eliminar_Paciente)))
+
+
+
+/* GESTIÓN DE CITAS/*
+
+
+/* Apartir de aqui inicia la sección de (Programar_Cita.html) 
+Las que son necesarias, recordando que hemos tomado la estructura de los modulos anteriores*/
+
+
+
+
+/* Estilo General para el texto del formulario */
+
+
+.home-main-texth{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: rgb(17, 15, 15);
+    text-align: center;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid silver;
+    position: absolute;
+    margin-top: 137px;
+  }
+/* Espacio y estilo de los inputs y selects */
+.espacioh1, .espacioh2, .espacioh3, .espacioh4, .espacioh5, .espacioh6, 
+.espacioh7, .espacioh8, .espacioh9, .espacioh10, .espacioh11 {
+    transform: translateY(-50px);
+    width: 165px !important;
+    position: absolute; /* Establecer posición relativa */
+    margin: 40px 0; /* Margen común para los elementos */
+}
+.espacioh1 { margin-left: -467px; margin-top: 16px; }
+.espacioh2 { margin-left: -213px; margin-top: 16px;}
+.espacioh3 { margin-left: 47px;margin-top: 37px; }
+.espacioh4 { margin-left: 298px;margin-top: 18px; }
+.espacioh5 { margin-left: -467px; margin-top: 100px;}
+.espacioh6 { margin-left: -213px; margin-top: 100px; }
+.espacioh7 { margin-left: 47px; margin-top: 100px; }
+.espacioh8 { margin-left: 298px; margin-top: 119px; }
+.espacioh9 { margin-left: -467px; margin-top: 195px; }
+.espacioh10 { margin-left: 260px; margin-top: 146px; }
+.espacioh11 { margin-left: 510px; margin-top: 146px; }
+
+/* Estilos para inputs */
+.espacioh1 input, .espacioh2 input, .espacioh4 input, .espacioh5 input, 
+.espacioh6 input, .espacioh7 input, .espacioh8 input, .espacioh9 input, 
+.espacioh10 input, .espacioh11 input {
+    width: 165px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    background: none;
+}
+
+/* Estilos para selects */
+.espacioh3 select, .espacioh8 select, .espacioh9 select {
+    width: 165px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: none;
+}
+
+/* Estilo de etiquetas */
+label {
+    position: absolute; 
+    top: -5px;
+    left: 10px;
+    font-size: 18px;
+    color: #adadad;
+    transition: 0.3s ease-in-out;
+}
+
+
+.home-main-botonh1{
+    margin: 10px;
+    width: 130px;
+    height: 45px;
+    background-color: rgb(26, 163, 163);
+    display: grid;
+    align-items: center;
+    border-radius: 25px;
+    position: absolute;
+    left: 550px;
+    top: 585px;
+    margin: 10px;
+}
+
+
+.home-main-botonh1 a{
+    font-weight: 750;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;  
+}
+
+
+
+.home-main-botonh2{
+    margin: 10px;
+    width: 130px;
+    height: 45px;
+    background-color: rgb(26, 163, 163);
+    display: grid;
+    align-items: center;
+    border-radius: 25px;
+    position: absolute;
+    left: 825px;
+    top: 585px;
+    margin: 10px;
+}
+
+.home-main-botonh2 a{
+    font-weight: 750;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;  
+}
+
+
+.home-main-botonh1, .home-main-botonh2{
+    transform: translateY(40px);
+    }
+
+
+
+/*partir de aqui inicia el modulo de "Cancelar_Cita.html"
+
+Lo que le hace falta, teniendo en cuenta que tomamos de las estructuras pasadas */
+
+
+.espacio_Motivo_Cancelar {
+    position: absolute;
+    margin: 40px 0;
+    margin-left: -194px;
+    margin-top: 140px;
+}
+
+.espacio_Motivo_Cancelar textarea {
+    width: 10cm;
+    height: 1.50cm;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    background: none;
+    resize: none; /* Para que no se pueda redimensionar */
+}
+
+.espacio_Motivo_Cancelar label {
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    font-size: 18px;
+    color: #adadad;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+
+/* Apartir de aqui inicia el modulo "Pacientes_Activos.html" */
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.pacientes-container {
+    margin: 20px auto;
+    max-width: 1000px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.pacientes-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.pacientes-table th, .pacientes-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.pacientes-table th {
+    background-color: #22b8b2;
+    color: white;
+}
+
+.pacientes-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.pacientes-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.status-active {
+    color: green;
+    font-weight: bold;
+}
+
+.status-inactive {
+    color: red;
+    font-weight: bold;
+}

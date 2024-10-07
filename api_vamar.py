@@ -20,7 +20,7 @@ def obtener_pacientes():
         pacientes = cursor.fetchall()
         return jsonify(pacientes)
     except Exception as e:
-        return jsonify({"mensaje": "Error al obtener pacientes", "error": str(e)})
+        return jsonify({"mensaje": "Error al obtener paciente activo", "error": str(e)})
     finally:
         cursor.close()
 

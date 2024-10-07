@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/Icono VAMAR.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Pacientes Inactivos - VAMAR</title>
+</head>
+<body>
+    <h1>Pacientes Inactivos</h1>
+    <div class="botones-container"></div>
+        <button class="home-main-boton00">
+            <a href="Portal.html">PORTAL</a>
+        </button>
+        <button class="home-main-boton001">
+            <a href="Informes_Estadisticas.html">ATRÁS</a>
+        </button>
+    </div>
+    <div class="pacientes-container">
+        <table class="pacientes-table">
+            <thead>
+                <tr>
+                    <th>Nombre Completo</th>
+                    <th>Número de Identidad</th>
+                    <th>Teléfono</th>
+                    <th>Estado</th>
+                    <th>Fecha de Afiliación</th> <!-- Nueva columna -->
+                </tr>
+            </thead>
+            <tbody id="pacientes-list">
+                <!-- Los datos se llenarán aquí dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Simulación de los pacientes inactivos
+        const pacientes = [
+            {
+                nombre: "Ana Gómez",
+                identidad: "5566778899",
+                telefono: "3015566778",
+                estado: "inactivo",
+                fechaAfiliacion: "2024-09-30" // Nueva propiedad
+            },
+            {
+                nombre: "Pedro Martínez",
+                identidad: "4455667788",
+                telefono: "3009876543",
+                estado: "inactivo",
+                fechaAfiliacion: "2024-09-30" // Nueva propiedad
+            },
+            {
+                nombre: "Laura Torres",
+                identidad: "2233445566",
+                telefono: "3106543210",
+                estado: "inactivo",
+                fechaAfiliacion: "2024-09-30" // Nueva propiedad
+            }
+        ];
+
+        // Función para cargar la lista de pacientes en la tabla
+        function cargarPacientes() {
+            const listaPacientes = document.getElementById('pacientes-list');
+            listaPacientes.innerHTML = ''; // Limpiar la tabla antes de rellenar
+
+            pacientes.forEach(paciente => {
+                const row = document.createElement('tr');
+
+                row.innerHTML = `
+                    <td>${paciente.nombre}</td>
+                    <td>${paciente.identidad}</td>
+                    <td>${paciente.telefono}</td>
+                    <td class="${paciente.estado === 'activo' ? 'status-active' : 'status-inactive'}">
+                        ${paciente.estado === 'activo' ? 'Activo' : 'Inactivo'}
+                    </td>
+                    <td>${paciente.fechaAfiliacion}</td> <!-- Nueva celda para la fecha -->
+                `;
+
+                listaPacientes.appendChild(row);
+            });
+        }
+
+        // Cargar pacientes cuando la página esté lista
+        document.addEventListener('DOMContentLoaded', cargarPacientes);
+    </script>
+</body>
+</html>
